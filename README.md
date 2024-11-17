@@ -1,3 +1,5 @@
+![Build Status](https://img.shields.io/github/actions/workflow/status/Robbbo-T/AGI-REPOSITORY/ci.yml)
+![License](https://img.shields.io/github/license/Robbbo-T/AGI-REPOSITORY)
 
 ```markdown
 # **Robbbo-T / AGI-REPOSITORY**
@@ -248,7 +250,7 @@ We welcome contributions to improve and expand the **Robbbo-T AGI-REPOSITORY**!
 **Answer:** Contributors should have a foundational understanding of artificial intelligence and machine learning concepts. Proficiency in programming languages like Python or JavaScript is beneficial. Familiarity with version control systems, especially Git, and experience with collaborative platforms like GitHub, will also help streamline your contributions.
 
 ### **4. How do I report a bug or request a feature?**
-**Answer:** Bugs and feature requests can be reported directly through our [GitHub Issues](https://github.com/yourusername/AGI-REPOSITORY/issues) page. Please provide detailed descriptions and, if possible, steps to reproduce the issue or the rationale behind the feature request to help us address it effectively.
+**Answer:** Bugs and feature requests can be reported directly through our [GitHub Issues](https://github.com/Robbbo-T/AGI-REPOSITORY/issues) page. Please provide detailed descriptions and, if possible, steps to reproduce the issue or the rationale behind the feature request to help us address it effectively.
 
 ### **5. What support options are available if I encounter issues?**
 **Answer:** You can seek assistance through our community forums, join our Slack channel for real-time support, or reach out via email at [support@agirepository.com](mailto:support@agirepository.com). We strive to respond to all inquiries within 48 hours.
