@@ -68,7 +68,7 @@ Our mission is to push the boundaries of AGI by creating a versatile and ethical
 
 A clear repository structure enhances navigation and ease of contribution. Below is an overview of the **AGI-REPOSITORY** structure:
 
-```
+`
 AGI-REPOSITORY/
 ├── docs/
 │   ├── index.md
