@@ -1,4 +1,4 @@
-```markdown
+# Hola
 # AGI-REPOSITORY
 
 Bienvenido al **AGI-REPOSITORY**, una iniciativa liderada por **Robbbo-T** para desarrollar una **Inteligencia Artificial General (AGI)** que funcione como una analogía digital de un gobierno global. Este proyecto tiene como objetivo integrar diversos componentes tecnológicos y éticos para crear una plataforma que aborde los desafíos más apremiantes de la humanidad mediante la inteligencia artificial.
