@@ -69,6 +69,20 @@ agent.learn()
 3. **Storing a Transition**: The `store_transition` method stores the state, action, and reward for each transition.
 4. **Learning from Transitions**: The `learn` method updates the policy based on the stored transitions. The policy is adjusted to increase the probability of actions that led to higher rewards.
 
+## Continuous Integration for Reinforcement Learning
+
+Continuous integration (CI) is a crucial process in software development that ensures code changes are automatically tested and validated. In the context of reinforcement learning, CI helps maintain the reliability and performance of the learning algorithms by running automated tests on the agents.
+
+### Implementation
+
+The continuous integration pipeline for reinforcement learning is implemented in the `run_continuous_integration` function in the `src/learning/reinforcement_learning.py` file. This function runs unit tests for the `QLearningAgent` and `PolicyGradientAgent` classes to ensure they function correctly.
+
+### Benefits
+
+1. **Automated Testing**: CI allows for automated testing of reinforcement learning agents, reducing the need for manual testing and ensuring that code changes do not introduce errors.
+2. **Early Detection of Issues**: By running tests automatically, CI helps detect issues early in the development process, allowing for quicker resolution and maintaining code quality.
+3. **Consistent Performance**: CI ensures that reinforcement learning algorithms perform consistently by validating their behavior with each code change.
+
 ## References
 
-For more details on the implementation of these algorithms, refer to the `src/learning/reinforcement_learning.py` file in the AGI-REPOSITORY project.
+For more details on the implementation of these algorithms and the continuous integration process, refer to the `src/learning/reinforcement_learning.py` file in the AGI-REPOSITORY project.

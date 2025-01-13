@@ -3,6 +3,7 @@ Reinforcement Learning Algorithms for AGI-REPOSITORY
 """
 
 import numpy as np
+import unittest
 
 class QLearningAgent:
     def __init__(self, state_size, action_size, learning_rate=0.1, discount_factor=0.99, exploration_rate=1.0, exploration_decay=0.995):
@@ -52,6 +53,28 @@ class PolicyGradientAgent:
         self.actions = []
         self.rewards = []
 
-# QLearningAgent and PolicyGradientAgent classes implement basic reinforcement learning algorithms.
-# QLearningAgent uses Q-learning, a model-free reinforcement learning algorithm.
-# PolicyGradientAgent uses policy gradient methods to optimize the policy directly.
+def run_continuous_integration():
+    class TestReinforcementLearning(unittest.TestCase):
+        def setUp(self):
+            self.q_agent = QLearningAgent(state_size=10, action_size=4)
+            self.pg_agent = PolicyGradientAgent(state_size=10, action_size=4)
+
+        def test_q_learning_agent(self):
+            state = 0
+            action = self.q_agent.choose_action(state)
+            self.assertIn(action, range(4))
+            self.q_agent.learn(state, action, reward=1, next_state=1)
+            self.assertGreaterEqual(self.q_agent.q_table[state, action], 0)
+
+        def test_policy_gradient_agent(self):
+            state = 0
+            action = self.pg_agent.choose_action(state)
+            self.assertIn(action, range(4))
+            self.pg_agent.store_transition(state, action, reward=1)
+            self.pg_agent.learn()
+            self.assertGreaterEqual(self.pg_agent.policy[state, action], 0)
+
+    unittest.main()
+
+if __name__ == "__main__":
+    run_continuous_integration()

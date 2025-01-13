@@ -159,6 +159,19 @@ agent.learn()
 
 Para más detalles sobre los algoritmos de aprendizaje por refuerzo, consulta el archivo [reinforcement_learning.md](docs/reinforcement_learning.md).
 
+### Ejecución del Pipeline de Integración Continua para Aprendizaje por Refuerzo
+
+Para ejecutar el pipeline de integración continua para los agentes de aprendizaje por refuerzo, sigue estos pasos:
+
+1. Asegúrate de tener todas las dependencias instaladas y el entorno configurado.
+2. Ejecuta el siguiente comando en la terminal:
+
+   ```bash
+   python src/learning/reinforcement_learning.py
+   ```
+
+Este comando ejecutará las pruebas de integración continua para los agentes de Q-Learning y Policy Gradient, asegurando que los algoritmos funcionen correctamente y se integren sin problemas en el sistema.
+
 ## Cómo Contribuir
 
 ¡Las contribuciones son bienvenidas! Por favor, sigue estos pasos:
