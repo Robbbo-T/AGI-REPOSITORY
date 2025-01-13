@@ -194,4 +194,18 @@ Para más información o para participar en el proyecto, por favor, comuníquese
 
 ¡Estamos ansiosos por colaborar y construir juntos el futuro de la inteligencia artificial!
 
+## Integración de Aprendizaje por Refuerzo
 
+El AGI-REPOSITORY incorpora algoritmos de aprendizaje por refuerzo para permitir la toma de decisiones autónoma. Estos algoritmos, como Q-learning y métodos de gradiente de política, están diseñados para mejorar con el tiempo a medida que interactúan con su entorno.
+
+Para más detalles sobre los algoritmos de aprendizaje por refuerzo utilizados en el proyecto, consulta el archivo [reinforcement_learning.md](docs/reinforcement_learning.md).
+
+## Prácticas Éticas y Sostenibles
+
+El AGI-REPOSITORY se compromete a seguir prácticas éticas y sostenibles en el desarrollo y despliegue de sus tecnologías. Esto incluye:
+
+- **Transparencia**: Mantener procesos y decisiones abiertos para revisión pública.
+- **Inclusión**: Respetar la diversidad cultural, lingüística y social.
+- **Seguridad**: Priorizar la protección de datos y la ciberseguridad.
+- **Colaboración**: Fomentar un entorno colaborativo y multidisciplinario.
+- **Responsabilidad Ética**: Asegurar que todas las acciones y decisiones estén alineadas con valores éticos universales y los derechos humanos.

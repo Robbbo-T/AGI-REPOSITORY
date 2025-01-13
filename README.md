@@ -24,6 +24,7 @@ El **AGI-REPOSITORY** es un proyecto abierto y colaborativo que busca desarrolla
 - **Bio.ploT**: Herramienta de visualización geométrica e ilustrativa para transformar datos en estructuras visuales intuitivas.
 - **Ampel 4**: Plataforma avanzada para la gestión de datos en tiempo real y optimización de procesos.
 - **Perceptrón Básico**: Implementación de clasificadores binarios utilizando perceptrones y redes neuronales.
+- **Integración de Aprendizaje por Refuerzo**: Permite la toma de decisiones autónoma a través de algoritmos de aprendizaje por refuerzo.
 
 ## Estructura del Repositorio
 
@@ -34,14 +35,14 @@ AGI-REPOSITORY/
 │   ├── bioplot/
 │   ├── ampel4/
 │   ├── perceptron_models/
-│   └── ...
+│   └── learning/           # Algoritmos de aprendizaje automático y por refuerzo
 ├── tests/
 │   ├── test_chatquantum.py
 │   ├── test_bioplot.py
 │   └── ...
 ├── docs/
 │   ├── manifesto.md
-│   └── ...
+│   └── reinforcement_learning.md  # Documentación detallada sobre algoritmos de aprendizaje por refuerzo
 ├── README.md
 ├── LICENSE
 └── .gitignore
@@ -112,6 +113,52 @@ resultados = ampel.query_data('SELECT * FROM tabla_ejemplo')
 print(resultados)
 ```
 
+### Algoritmos de Aprendizaje por Refuerzo
+
+#### Q-Learning
+
+```python
+from src.learning.reinforcement_learning import QLearningAgent
+
+# Definir el tamaño del estado y de la acción
+state_size = 10
+action_size = 4
+
+# Crear un agente de Q-learning
+agent = QLearningAgent(state_size, action_size)
+
+# Ejemplo de cómo elegir una acción y aprender de una transición
+state = 0
+action = agent.choose_action(state)
+reward = 1
+next_state = 1
+agent.learn(state, action, reward, next_state)
+```
+
+#### Policy Gradient
+
+```python
+from src.learning.reinforcement_learning import PolicyGradientAgent
+
+# Definir el tamaño del estado y de la acción
+state_size = 10
+action_size = 4
+
+# Crear un agente de policy gradient
+agent = PolicyGradientAgent(state_size, action_size)
+
+# Ejemplo de cómo elegir una acción y almacenar una transición
+state = 0
+action = agent.choose_action(state)
+reward = 1
+agent.store_transition(state, action, reward)
+
+# Aprender de las transiciones almacenadas
+agent.learn()
+```
+
+Para más detalles sobre los algoritmos de aprendizaje por refuerzo, consulta el archivo [reinforcement_learning.md](docs/reinforcement_learning.md).
+
 ## Cómo Contribuir
 
 ¡Las contribuciones son bienvenidas! Por favor, sigue estos pasos:
@@ -151,8 +198,6 @@ Para preguntas, sugerencias o interés en colaborar:
 ¡Gracias por tu interés en el **AGI-REPOSITORY**! Juntos podemos construir una herramienta que beneficie a toda la humanidad.
 
 ```
-
----
 
 Con este `README.md`, proporcionas una visión general clara y concisa del repositorio, facilitando que otros entiendan el propósito del proyecto y cómo pueden involucrarse.
 
